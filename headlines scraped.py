@@ -26,3 +26,4 @@ with open("headlines.txt", "w", encoding="utf-8") as file:
 
 
 print(f"✅ Scraped {len(headlines)} headlines and saved to 'headlines.txt'")
+
