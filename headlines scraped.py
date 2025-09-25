@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 25 21:37:27 2025
 
-@author: Pratibha
-"""
 
 import requests
 from bs4 import BeautifulSoup
@@ -28,5 +23,6 @@ for tag in soup.find_all(['h2', 'h3']):
 with open("headlines.txt", "w", encoding="utf-8") as file:
     for i, headline in enumerate(headlines, start=1):
         file.write(f"{i}. {headline}\n")
+
 
 print(f"✅ Scraped {len(headlines)} headlines and saved to 'headlines.txt'")
